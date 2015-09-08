@@ -1,0 +1,16 @@
+HTTP: texto puro
+HTTPS: criptografado com certificado digital (chave publica)
+
+HTTPS - estabelece conexão com uma criptogrofia assimetrica (chaves diferentes)
+      - Depois continua com um simetrica com chave gerada no inicio da comunicação.
+
+Para verificar IP ou grupo de IPs de um site: nslookup
+> nslookup alura.com.br
+
+Porta padrao do HTTP: 80
+Porta padrao do HTTPS: 443
+
+URI:
+Padrão de endereços que podem vir em varios formatos. Ex:
+URL: https://www.alura.com.br/course/introducao-html-css
+URN: urn:alura:course:introducao-html-css
