@@ -16,6 +16,46 @@ URL: https://www.alura.com.br/course/introducao-html-css
 URN: urn:alura:course:introducao-html-css
 
 Request/Response:
-Cada requisição é independente, mesmo se estiver no mesmo portal.
+Cada requisição é independente, mesmo se estiver no mesmo portal. É necessario enviar todas as
+informações sempre.
 Na primeira requisicao do cliente sao passados login e senha, um hash e respondido
 As informações de usuário (hash) a partir dai sempre são enviadas a cada nova requisicao.
+
+Stateless: Não guarda informações das requisições anteriores.
+
+Cookies: Arquivos de texto com informações do usuario salvas no navegador para serem usadas no
+servidor
+
+Depurador HTTP Chrome: (Ctrl + Shift + i) ou "F12" > Aba Network
+
+Códigos de resposta HTTP:
+2xx: Funcionou. Ex: 200 OK
+3xx: Ação adicional. Ex: 301 Moved Permanently (A pagina não existe, mas o usuario é movido pra outra)
+     Ao clicar no numero na aba Network obtemos dados adicionais
+4xx: Navegador enviou algo errado. Ex: 404 not found
+5XX: Erro do lado do servidor: Ex: 500 erro no processamento
+
+Resumindo:
+1xx Informational
+2xx Success
+3xx Redirection
+4xx Client Error
+5xx Server Error
+
+Ferramenta TELNET: mostra informações de requisição/resposta
+> telnet www.caelum.com.br 80
+
+Metodos HTTP:
+Aém do GET e POST, que são os mais utilizados, temos outros como:
+DELETE: apagar um recurso (pagina)
+PUT: atualizar um recurso
+
+NODE.JS
+Apos instalar e configurar, é preciso instalar para cada projeto, com oseguinte comando:
+> npm install (A pasta nodes_modules será criada)
+Para inicializar o server node, usa-se:
+> npm start
+
+CURL
+Ferramenta que permite verificar requisições e respostas
+-v: verbose -> Mostra todas as informações sem filtro
