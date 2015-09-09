@@ -14,3 +14,8 @@ URI:
 Padrão de endereços que podem vir em varios formatos. Ex:
 URL: https://www.alura.com.br/course/introducao-html-css
 URN: urn:alura:course:introducao-html-css
+
+Request/Response:
+Cada requisição é independente, mesmo se estiver no mesmo portal.
+Na primeira requisicao do cliente sao passados login e senha, um hash e respondido
+As informações de usuário (hash) a partir dai sempre são enviadas a cada nova requisicao.
