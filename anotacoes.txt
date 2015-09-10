@@ -59,3 +59,8 @@ Para inicializar o server node, usa-se:
 CURL
 Ferramenta que permite verificar requisições e respostas
 -v: verbose -> Mostra todas as informações sem filtro
+POST no curl: curl --request POST --data "valor=700&qtd=7" "http://localhost:3000/calcula/parcelas"
+Metodo simplificado: curl -X POST -d "valor=700&qtd=7" "http://localhost:3000/calcula/parcelas"
+
+Autenticaçao:
+Com o parametro HTTP WWW-Authenticate: Basic, os dados trafegam cifrados em Base64
